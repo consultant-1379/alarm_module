@@ -1,0 +1,13 @@
+%a
+-ObjectOfReference=$!{ObjectOfReference}
+-RecordType=2
+-EventTime=$!{ericssonTemplateEventTime}
+-EventType=1002000000
+-PerceivedSeverity=$!{PerceivedSeverity}
+-ProbableCauseText=$!{MonitoredAttributes}
+-SpecificProblem=$!{SpecificProblems}
+-ThresholdInformation=$!{ThresholdInformation}
+-MonitoredAttributes=$!{MonitoredAttributes}
+-MonitoredAttributeValues=$!{MonitoredAttributeValues}
+-AdditionalText=$!{AdditionalText}
+%A

@@ -1,0 +1,30 @@
+<project name="alarm_module" default="test_all">
+    <property file="${user.home}/EniqBuild/BH/build.properties"/>
+    <property name="module.name" value="alarm_module"/>
+    <property name="ant.common" value="${cc.base}/tools/ant_common"/>
+    <property file="${ant.common}/common.properties"/>
+    <property name="module.base" value="${module.alarm_module.base}"/>
+	<property name="module.build" value="${module.alarm_module.build}"/>
+    <property name="module.dependants" value="${module.alarm_module.dependants}"/>
+    <import file="${ant.common}/common.xml"/>
+    <property name="junitp.testFileDir" value="${module.test.source}"/>
+    <property name="junitp.templateDir" value="5.2"/>
+    <property name="tests.to.run" value="**/*Test.class"/>
+    <property name="mods.needed" value=""/>
+
+
+    <path id="alarm_module.lib.classpath">
+        <path refid="plaform.lib.classpath"/>
+		<path location="${module.repository.pkg}"/>
+		<path location="${module.engine.pkg}"/>
+		<path location="${module.common_utilities.pkg}"/>
+		<path location="${module.parser.pkg}"/>
+    </path>
+    <path id="alarm_module.test.classpath">
+        <path refid="platform.test.classpath"/>
+        <path refid="alarm_module.lib.classpath"/>
+		<path location="${module.alarm_module.base}/templates"/>
+		<path location="${module.alarm_module.base}/test"/>
+    </path>
+    
+</project>

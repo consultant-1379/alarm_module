@@ -1,0 +1,16 @@
+<!--
+     Ericsson Network IQ Alarm utils ant tasks.
+     Copyright (c) 1999 - 2006 AB LM Ericsson Oy  All rights reserved.
+-->
+
+<project name="alarm_utils" default="change_alarm_password">
+	<property name="unzip_path" location="${currentWorkingDir}/tp_installer_temp/unzipped_tp" />
+
+	<taskdef resource="net/sf/antcontrib/antlib.xml" />
+	<taskdef name="ChangeAlarmPassword" classname="com.distocraft.dc5000.etl.alarm.ChangeAlarmPassword" />
+	
+	<target name="change_alarm_password">
+		<ChangeAlarmPassword newAlarmPassword="${newAlarmPassword}" />
+	</target>
+	
+</project>

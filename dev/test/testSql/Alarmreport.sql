@@ -1,0 +1,1 @@
+insert into Alarmreport (INTERFACEID, REPORTID, REPORTNAME, URL, STATUS) values ('AlarmInterface_15min', 'afb14f80-5777-495e-86be-78f21dd4d19c', 'testReport_123', 'reportname=AM_Static_threshold_template_new', 'ACTIVE');

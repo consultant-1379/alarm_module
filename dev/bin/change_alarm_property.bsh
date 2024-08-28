@@ -1,0 +1,128 @@
+#!/usr/bin/sh
+# ********************************************************************
+# Ericsson Radio Systems AB                                     SCRIPT
+# ********************************************************************
+#
+#
+# (c) Ericsson Radio Systems AB 2018 - All rights reserved.
+#
+# The copyright to the computer program(s) herein is the property
+# of Ericsson Radio Systems AB, Sweden. The programs may be used 
+# and/or copied only with the written permission from Ericsson Radio 
+# Systems AB or in accordance with the terms and conditions stipulated 
+# in the agreement/contract under which the program(s) have been 
+# supplied.
+#
+# ********************************************************************
+# Name    : change_alarm_property.bsh
+# Date    : 12/12/2019
+# Purpose : Script to change alarm property
+# Usage   : activate_interface INTERFACE_NAME OSS_NAME IN_DIR
+# Author  : ENINAKAR
+# ********************************************************************
+
+unalias stop 2> /dev/null
+
+if [ ${LOGNAME} != "dcuser"  ] ; then
+  echo "This script must be executed as dcuser"
+  exit 1
+fi
+
+if [ -z "$CONF_DIR" ] ; then
+  echo "ERROR: CONF_DIR is not set"
+  exit 2
+fi
+
+. ${CONF_DIR}/niq.rc
+
+JAVA_HOME="/eniq/sw/runtime/java"
+
+CPATH="${PLATFORM_DIR}"
+
+DIRS=`ls ${PLATFORM_DIR}`
+
+for file in ${DIRS}
+do
+  if [ -d ${PLATFORM_DIR}/${file}/dclib ]
+  then
+    JARS=`ls ${PLATFORM_DIR}/${file}/dclib/*.jar`
+
+    for jar in ${JARS}
+    do
+      CPATH="${CPATH}:${jar}"
+    done
+  fi
+done
+
+showAlarmConnProperties() {
+
+  ${JAVA_HOME}/bin/java -d64 -Dpname="ChangeAlarmConnProperty" -Xmx64M -Djava.util.logging.config.file=${CONF_DIR}/engineAdminLogging.properties -Ddc5000.config.directory=${CONF_DIR} -Ddc.conf.dir=${CONF_DIR} -DLOG_DIR=${LOG_DIR} -classpath ${CPATH} com.ericsson.etl.alarm.ChangeAlarmConnProperty showAlarmConnProperties
+}
+
+showAlarmParserProperties() {
+
+  ${JAVA_HOME}/bin/java -d64 -Dpname="ChangeAlarmParserProperty" -Xmx64M -Djava.util.logging.config.file=${CONF_DIR}/engineAdminLogging.properties -Ddc5000.config.directory=${CONF_DIR} -Ddc.conf.dir=${CONF_DIR} -DLOG_DIR=${LOG_DIR} -classpath ${CPATH} com.ericsson.etl.alarm.ChangeAlarmParserProperty showAlarmParserProperties
+ 
+}
+
+eexecute1() {
+
+  ${JAVA_HOME}/bin/java -d64 -Dpname="ChangeAlarmConnProperty" -Xmx64M -Djava.util.logging.config.file=${CONF_DIR}/engineAdminLogging.properties -Ddc5000.config.directory=${CONF_DIR} -Ddc.conf.dir=${CONF_DIR} -DLOG_DIR=${LOG_DIR} -classpath ${CPATH} com.ericsson.etl.alarm.ChangeAlarmConnProperty ${X1} ${X2}
+  ECODE=$?
+
+  if [ ${ECODE} -ne 0 ] ; then
+    if [ "${X1}" != "" ] ; then
+    	echo "Execute failed"
+    fi
+  fi
+
+  exit ${ECODE}
+
+}
+
+eexecute2() {
+
+  ${JAVA_HOME}/bin/java -d64 -Dpname="ChangeAlarmParserProperty" -Xmx64M -Djava.util.logging.config.file=${CONF_DIR}/engineAdminLogging.properties -Ddc5000.config.directory=${CONF_DIR} -Ddc.conf.dir=${CONF_DIR} -DLOG_DIR=${LOG_DIR} -classpath ${CPATH} com.ericsson.etl.alarm.ChangeAlarmParserProperty ${X1} ${X2} ${X3}
+  ECODE=$?
+
+  if [ ${ECODE} -ne 0 ] ; then
+    if [ "${X1}" != "" ] ; then
+    	echo "Execute failed"
+    fi
+  fi
+
+  exit ${ECODE}
+
+}
+
+case "$1" in
+
+showAlarmConnProperties)
+     showAlarmConnProperties
+     ;;
+
+showAlarmParserProperties)
+     showAlarmParserProperties
+     ;;
+
+-alarmconn)
+     X1=$2
+     X2=$3
+     eexecute1
+     ;;
+
+-alarmparser)
+     X1=$2
+     X2=$3
+     X3=$4
+     eexecute2
+     ;;
+*)
+     echo "Usage: ./change_alarm_property.bsh showAlarmConnProperties | showAlarmParserProperties"
+     echo "Usage: ./change_alarm_property.bsh -alarmconn|-alarmparser COMMAND"
+     exit 3
+     ;;
+esac
+
+
+

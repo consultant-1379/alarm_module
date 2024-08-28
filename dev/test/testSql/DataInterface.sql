@@ -1,0 +1,1 @@
+insert into DataInterface (INTERFACENAME, STATUS, INTERFACETYPE, DESCRIPTION, DATAFORMATTYPE, INTERFACEVERSION) values ('INTF_DC_Z_ALARM', '1', 'alarm', '', 'alarm', 'N/A');

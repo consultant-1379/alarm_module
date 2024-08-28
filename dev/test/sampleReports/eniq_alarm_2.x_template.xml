@@ -1,0 +1,903 @@
+<document xmlns="http://www.businessobjects.com/2003/ro" xmlns:ro="http://www.businessobjects.com/2003/ro" unit="pixel">
+	<media>
+		<property name="mode.selected">
+			web-paginated
+		</property>
+		<property name="mode.web.page.extra-padding-bottom">
+			1000
+		</property>
+		<property name="mode.web.page.extra-padding-right">
+			1000
+		</property>
+		<property name="mode.web.page.min-height">
+			38400
+		</property>
+		<property name="mode.web.page.min-width">
+			48000
+		</property>
+		<property name="output.dpi">
+			96
+		</property>
+		<property name="output.format.xls.optimised">
+			yes
+		</property>
+		<property name="output.format.xml.option.style">
+			1
+		</property>
+		<property name="output.format.xml.styledict.fontplatform">
+			html
+		</property>
+		<property name="output.format.xml.td.bandinfo">
+			yes
+		</property>
+		<property name="output.limit.size">
+			5120
+		</property>
+		<property name="output.selected">
+			xml.ro
+		</property>
+		<property name="output.unit">
+			pixel
+		</property>
+		<property name="page.records.horizontal.limit">
+			1000
+		</property>
+		<property name="page.records.vertical.limit">
+			1000
+		</property>
+	</media>
+	<report rid="1">
+		<styledict>
+			<style sid="-4">
+				<background rgb="#f0f0f4">
+				</background>
+			</style>
+			<style sid="-1">
+				<background rgb="#f0f0f4">
+				</background>
+			</style>
+			<style sid="1">
+				<font face="Arial, Helvetica, 'Courier New', 'Times New Roman'" rgb="#000000" bold="false" italic="false" strike="false" underline="false">
+				</font>
+				<background rgb="#ffffff">
+				</background>
+				<valign value="middle">
+				</valign>
+				<halign value="center">
+				</halign>
+			</style>
+			<style sid="2">
+				<valign value="middle">
+				</valign>
+				<halign value="center">
+				</halign>
+			</style>
+			<style sid="3">
+			</style>
+			<style sid="5">
+				<font face="Arial, Helvetica, 'Courier New', 'Times New Roman'" size="13" rgb="#000000" bold="false" italic="false" strike="false" underline="false">
+				</font>
+				<border side="all" rgb="#000000" thick="1" style="plain">
+				</border>
+				<background rgb="#ffffbf">
+				</background>
+				<valign value="middle">
+				</valign>
+				<halign value="left">
+				</halign>
+			</style>
+			<style sid="6">
+				<border side="all" rgb="#000000" thick="1" style="plain">
+				</border>
+				<background rgb="#ffffff">
+				</background>
+			</style>
+			<style sid="12">
+				<background rgb="#ffffff">
+				</background>
+			</style>
+			<style sid="13">
+				<font face="Arial, Helvetica, 'Courier New', 'Times New Roman'" size="16" rgb="#000000" bold="true" italic="false" strike="false" underline="false">
+				</font>
+				<background rgb="#ffffff">
+				</background>
+				<valign value="middle">
+				</valign>
+				<halign value="left">
+				</halign>
+			</style>
+			<style sid="-6">
+				<font face="Arial, Helvetica, 'Courier New', 'Times New Roman'" size="13" rgb="#000000" bold="false" italic="false" strike="false" underline="false">
+				</font>
+				<background rgb="#ffffff">
+				</background>
+				<valign value="middle">
+				</valign>
+				<halign value="left">
+				</halign>
+			</style>
+			<style sid="-5">
+				<font face="Arial, Helvetica, 'Courier New', 'Times New Roman'" size="13" rgb="#000000" bold="true" italic="false" strike="false" underline="false">
+				</font>
+				<background rgb="#ffffff">
+				</background>
+				<valign value="middle">
+				</valign>
+				<halign value="left">
+				</halign>
+			</style>
+			<style sid="-3">
+				<font face="Arial, Helvetica, 'Courier New', 'Times New Roman'" size="13" rgb="#000000" bold="false" italic="false" strike="false" underline="false">
+				</font>
+				<border side="all" rgb="#000000" thick="1" style="plain">
+				</border>
+				<background rgb="#ffffbf">
+				</background>
+				<valign value="middle">
+				</valign>
+				<halign value="left">
+				</halign>
+			</style>
+			<style sid="-2">
+				<font face="Arial, Helvetica, 'Courier New', 'Times New Roman'" size="13" rgb="#ffffff" bold="true" italic="false" strike="false" underline="false">
+				</font>
+				<border side="all" rgb="#000000" thick="1" style="plain">
+				</border>
+				<background rgb="#000080">
+				</background>
+				<valign value="middle">
+				</valign>
+				<halign value="left">
+				</halign>
+			</style>
+			<style sid="8">
+				<font face="Arial, Helvetica, 'Courier New', 'Times New Roman'" size="16" rgb="#000000" bold="true" italic="false" strike="false" underline="false">
+				</font>
+				<border side="left" rgb="#000000" thick="0">
+				</border>
+				<border side="right" rgb="#000000" thick="0">
+				</border>
+				<border side="top" rgb="#000000" thick="0">
+				</border>
+				<border side="bottom" rgb="#000000" thick="1" style="plain">
+				</border>
+				<valign value="bottom">
+				</valign>
+				<halign value="left">
+				</halign>
+			</style>
+			<style sid="9">
+				<font face="Arial, Helvetica, 'Courier New', 'Times New Roman'" size="11" rgb="#000000" bold="true" italic="false" strike="false" underline="false">
+				</font>
+				<border side="all" rgb="#000000" thick="0">
+				</border>
+				<background rgb="#ffffff">
+				</background>
+				<valign value="middle">
+				</valign>
+				<halign value="left">
+				</halign>
+			</style>
+		</styledict>
+		<page sid="1" num="1" format="web-display" h="1024" w="1280" lastpage="true">
+			<page_element type="header" ref="1.2" bid="2" h="75" w="1280" sid="2" rinfo="0:0;1:0;" cinfo="0:0;1:0;">
+			</page_element>
+			<page_element type="body" ref="1.i" bid="44" y="75" h="874" w="1280" sid="3" rinfo="0:0;1:570;" cinfo="0:0;1:1187;">
+				<table class="vtable" ref="1.f" bid="41" y="330" h="240" w="1187" bt="1" sid="6" nbrow="10" nbcol="7">
+					<col x="0" w="415">
+					</col>
+					<col x="415" w="136">
+					</col>
+					<col x="551" w="120">
+					</col>
+					<col x="671" w="148">
+					</col>
+					<col x="819" w="180">
+					</col>
+					<col x="999" w="99">
+					</col>
+					<col x="1098" w="89">
+					</col>
+					<tr h="24" y="0" type="header">
+						<td vtype="header">
+							<cell ref="1.3" bid="3" h="24" w="415" pad="2" bt="1" sid="-2">
+								<ct what="weblink">
+									ManagedObjectInstance
+								</ct>
+							</cell>
+						</td>
+						<td vtype="header">
+							<cell ref="1.4" bid="4" h="24" w="136" pad="2" bt="1" sid="-2">
+								<ct what="weblink">
+									ObjectOfReference
+								</ct>
+							</cell>
+						</td>
+						<td vtype="header">
+							<cell ref="1.5" bid="5" h="24" w="120" pad="2" bt="1" sid="-2">
+								<ct what="weblink">
+									EventTime
+								</ct>
+							</cell>
+						</td>
+						<td vtype="header">
+							<cell ref="1.6" bid="6" h="24" w="148" pad="2" bt="1" sid="-2">
+								<ct what="weblink">
+									MonitoredAttributes
+								</ct>
+							</cell>
+						</td>
+						<td vtype="header">
+							<cell ref="1.7" bid="7" h="24" w="180" pad="2" bt="1" sid="-2">
+								<ct what="weblink">
+									MonitoredAttributeValues
+								</ct>
+							</cell>
+						</td>
+						<td vtype="header">
+							<cell ref="1.8" bid="8" h="24" w="99" pad="2" bt="1" sid="-2">
+								<ct what="weblink">
+									AlarmCriteria
+								</ct>
+							</cell>
+						</td>
+						<td vtype="header">
+							<cell ref="1.9" bid="9" h="24" w="89" pad="2" bt="1" sid="-2">
+								<ct what="weblink">
+									OssName
+								</ct>
+							</cell>
+						</td>
+					</tr>
+					<tr h="24" y="24">
+						<td>
+							<cell ref="1.A.0" bid="10" h="24" w="415" pad="2" bt="1" sid="-3">
+								<ct what="weblink">
+									ManagedElement=1,NodeBFunction=1,Sector=1,Carrier=1,Aich=1
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.B.0" bid="11" h="24" w="136" pad="2" bt="1" sid="-3">
+								<ct what="weblink">
+									wotWot
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.C.0" bid="12" h="24" w="120" pad="2" bt="1" sid="-3">
+								<ct what="weblink">
+									2009-09-08 00:27
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.D.0" bid="13" h="24" w="148" pad="2" bt="1" sid="-3">
+								<ct what="weblink">
+									pmNegativeMessages
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.E.0" bid="14" h="24" w="180" pad="2" bt="1" sid="-3">
+								<ct what="weblink">
+									064
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.F.0" bid="15" h="24" w="99" pad="2" bt="1" sid="-3">
+								<ct what="weblink">
+									1
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.G.0" bid="16" h="24" w="89" pad="2" bt="1" sid="-3">
+								<ct what="weblink">
+									eniq_oss_1
+								</ct>
+							</cell>
+						</td>
+					</tr>
+					<tr h="24" y="48">
+						<td>
+							<cell ref="1.A.1" bid="10" h="24" w="415" pad="2" bt="1" sid="5">
+								<ct what="weblink">
+									ManagedElement=1,NodeBFunction=1,Sector=1,Carrier=1,Aich=1
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.B.1" bid="11" h="24" w="136" pad="2" bt="1" sid="5">
+								<ct what="weblink">
+									wotWot
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.C.1" bid="12" h="24" w="120" pad="2" bt="1" sid="5">
+								<ct what="weblink">
+									2009-09-08 00:28
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.D.1" bid="13" h="24" w="148" pad="2" bt="1" sid="5">
+								<ct what="weblink">
+									pmNegativeMessages
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.E.1" bid="14" h="24" w="180" pad="2" bt="1" sid="5">
+								<ct what="weblink">
+									064
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.F.1" bid="15" h="24" w="99" pad="2" bt="1" sid="5">
+								<ct what="weblink">
+									1
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.G.1" bid="16" h="24" w="89" pad="2" bt="1" sid="5">
+								<ct what="weblink">
+									eniq_oss_1
+								</ct>
+							</cell>
+						</td>
+					</tr>
+					<tr h="24" y="72">
+						<td>
+							<cell ref="1.A.2" bid="10" h="24" w="415" pad="2" bt="1" sid="-3">
+								<ct what="weblink">
+									ManagedElement=1,NodeBFunction=1,Sector=1,Carrier=1,Aich=1
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.B.2" bid="11" h="24" w="136" pad="2" bt="1" sid="-3">
+								<ct what="weblink">
+									wotWot
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.C.2" bid="12" h="24" w="120" pad="2" bt="1" sid="-3">
+								<ct what="weblink">
+									2009-09-08 00:29
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.D.2" bid="13" h="24" w="148" pad="2" bt="1" sid="-3">
+								<ct what="weblink">
+									pmNegativeMessages
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.E.2" bid="14" h="24" w="180" pad="2" bt="1" sid="-3">
+								<ct what="weblink">
+									032
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.F.2" bid="15" h="24" w="99" pad="2" bt="1" sid="-3">
+								<ct what="weblink">
+									1
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.G.2" bid="16" h="24" w="89" pad="2" bt="1" sid="-3">
+								<ct what="weblink">
+									eniq_oss_1
+								</ct>
+							</cell>
+						</td>
+					</tr>
+					<tr h="24" y="96">
+						<td>
+							<cell ref="1.A.3" bid="10" h="24" w="415" pad="2" bt="1" sid="5">
+								<ct what="weblink">
+									ManagedElement=1,NodeBFunction=1,Sector=1,Carrier=1,Aich=2
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.B.3" bid="11" h="24" w="136" pad="2" bt="1" sid="5">
+								<ct what="weblink">
+									wotWot
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.C.3" bid="12" h="24" w="120" pad="2" bt="1" sid="5">
+								<ct what="weblink">
+									2009-09-08 00:27
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.D.3" bid="13" h="24" w="148" pad="2" bt="1" sid="5">
+								<ct what="weblink">
+									pmNegativeMessages
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.E.3" bid="14" h="24" w="180" pad="2" bt="1" sid="5">
+								<ct what="weblink">
+									166
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.F.3" bid="15" h="24" w="99" pad="2" bt="1" sid="5">
+								<ct what="weblink">
+									1
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.G.3" bid="16" h="24" w="89" pad="2" bt="1" sid="5">
+								<ct what="weblink">
+									eniq_oss_1
+								</ct>
+							</cell>
+						</td>
+					</tr>
+					<tr h="24" y="120">
+						<td>
+							<cell ref="1.A.4" bid="10" h="24" w="415" pad="2" bt="1" sid="-3">
+								<ct what="weblink">
+									ManagedElement=1,NodeBFunction=1,Sector=1,Carrier=1,Aich=2
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.B.4" bid="11" h="24" w="136" pad="2" bt="1" sid="-3">
+								<ct what="weblink">
+									wotWot
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.C.4" bid="12" h="24" w="120" pad="2" bt="1" sid="-3">
+								<ct what="weblink">
+									2009-09-08 00:28
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.D.4" bid="13" h="24" w="148" pad="2" bt="1" sid="-3">
+								<ct what="weblink">
+									pmNegativeMessages
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.E.4" bid="14" h="24" w="180" pad="2" bt="1" sid="-3">
+								<ct what="weblink">
+									166
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.F.4" bid="15" h="24" w="99" pad="2" bt="1" sid="-3">
+								<ct what="weblink">
+									1
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.G.4" bid="16" h="24" w="89" pad="2" bt="1" sid="-3">
+								<ct what="weblink">
+									eniq_oss_1
+								</ct>
+							</cell>
+						</td>
+					</tr>
+					<tr h="24" y="144">
+						<td>
+							<cell ref="1.A.5" bid="10" h="24" w="415" pad="2" bt="1" sid="5">
+								<ct what="weblink">
+									ManagedElement=1,NodeBFunction=1,Sector=1,Carrier=1,Aich=2
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.B.5" bid="11" h="24" w="136" pad="2" bt="1" sid="5">
+								<ct what="weblink">
+									wotWot
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.C.5" bid="12" h="24" w="120" pad="2" bt="1" sid="5">
+								<ct what="weblink">
+									2009-09-08 00:29
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.D.5" bid="13" h="24" w="148" pad="2" bt="1" sid="5">
+								<ct what="weblink">
+									pmNegativeMessages
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.E.5" bid="14" h="24" w="180" pad="2" bt="1" sid="5">
+								<ct what="weblink">
+									083
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.F.5" bid="15" h="24" w="99" pad="2" bt="1" sid="5">
+								<ct what="weblink">
+									1
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.G.5" bid="16" h="24" w="89" pad="2" bt="1" sid="5">
+								<ct what="weblink">
+									eniq_oss_1
+								</ct>
+							</cell>
+						</td>
+					</tr>
+					<tr h="24" y="168">
+						<td>
+							<cell ref="1.A.6" bid="10" h="24" w="415" pad="2" bt="1" sid="-3">
+								<ct what="weblink">
+									ManagedElement=1,NodeBFunction=1,Sector=1,Carrier=1,Aich=3
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.B.6" bid="11" h="24" w="136" pad="2" bt="1" sid="-3">
+								<ct what="weblink">
+									wotWot
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.C.6" bid="12" h="24" w="120" pad="2" bt="1" sid="-3">
+								<ct what="weblink">
+									2009-09-08 00:27
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.D.6" bid="13" h="24" w="148" pad="2" bt="1" sid="-3">
+								<ct what="weblink">
+									pmNegativeMessages
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.E.6" bid="14" h="24" w="180" pad="2" bt="1" sid="-3">
+								<ct what="weblink">
+									086
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.F.6" bid="15" h="24" w="99" pad="2" bt="1" sid="-3">
+								<ct what="weblink">
+									1
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.G.6" bid="16" h="24" w="89" pad="2" bt="1" sid="-3">
+								<ct what="weblink">
+									eniq_oss_1
+								</ct>
+							</cell>
+						</td>
+					</tr>
+					<tr h="24" y="192">
+						<td>
+							<cell ref="1.A.7" bid="10" h="24" w="415" pad="2" bt="1" sid="5">
+								<ct what="weblink">
+									ManagedElement=1,NodeBFunction=1,Sector=1,Carrier=1,Aich=3
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.B.7" bid="11" h="24" w="136" pad="2" bt="1" sid="5">
+								<ct what="weblink">
+									wotWot
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.C.7" bid="12" h="24" w="120" pad="2" bt="1" sid="5">
+								<ct what="weblink">
+									2009-09-08 00:28
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.D.7" bid="13" h="24" w="148" pad="2" bt="1" sid="5">
+								<ct what="weblink">
+									pmNegativeMessages
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.E.7" bid="14" h="24" w="180" pad="2" bt="1" sid="5">
+								<ct what="weblink">
+									086
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.F.7" bid="15" h="24" w="99" pad="2" bt="1" sid="5">
+								<ct what="weblink">
+									1
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.G.7" bid="16" h="24" w="89" pad="2" bt="1" sid="5">
+								<ct what="weblink">
+									eniq_oss_1
+								</ct>
+							</cell>
+						</td>
+					</tr>
+					<tr h="24" y="216">
+						<td>
+							<cell ref="1.A.8" bid="10" h="24" w="415" pad="2" bt="1" sid="-3">
+								<ct what="weblink">
+									ManagedElement=1,NodeBFunction=1,Sector=1,Carrier=1,Aich=3
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.B.8" bid="11" h="24" w="136" pad="2" bt="1" sid="-3">
+								<ct what="weblink">
+									wotWot
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.C.8" bid="12" h="24" w="120" pad="2" bt="1" sid="-3">
+								<ct what="weblink">
+									2009-09-08 00:29
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.D.8" bid="13" h="24" w="148" pad="2" bt="1" sid="-3">
+								<ct what="weblink">
+									pmNegativeMessages
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.E.8" bid="14" h="24" w="180" pad="2" bt="1" sid="-3">
+								<ct what="weblink">
+									043
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.F.8" bid="15" h="24" w="99" pad="2" bt="1" sid="-3">
+								<ct what="weblink">
+									1
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.G.8" bid="16" h="24" w="89" pad="2" bt="1" sid="-3">
+								<ct what="weblink">
+									eniq_oss_1
+								</ct>
+							</cell>
+						</td>
+					</tr>
+				</table>
+				<cell ref="1.H" bid="17" x="6" y="300" h="24" w="642" pad="1" sid="9">
+					<ct what="html">
+						<!-- #DCDATA_START -->
+					</ct>
+				</cell>
+				<table class="htable" ref="1.g" bid="42" x="8" y="30" h="264" w="384" sid="12" nbrow="11" nbcol="2">
+					<col x="0" w="192" type="header">
+					</col>
+					<col x="192" w="192">
+					</col>
+					<tr h="24" y="0">
+						<td htype="header">
+							<cell ref="1.I" bid="18" h="24" w="192" pad="2" sid="-5">
+								<ct what="weblink">
+									ManagedObjectClass
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.T.0" bid="29" h="24" w="192" pad="2" sid="-6">
+								<ct what="weblink">
+									NetworkElementClass
+								</ct>
+							</cell>
+						</td>
+					</tr>
+					<tr h="24" y="24">
+						<td htype="header">
+							<cell ref="1.J" bid="19" h="24" w="192" pad="2" sid="-5">
+								<ct what="weblink">
+									ETText
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.U.0" bid="30" h="24" w="192" pad="2" sid="-6">
+								<ct what="weblink">
+									qualityOfService
+								</ct>
+							</cell>
+						</td>
+					</tr>
+					<tr h="24" y="48">
+						<td htype="header">
+							<cell ref="1.K" bid="20" h="24" w="192" pad="2" sid="-5">
+								<ct what="weblink">
+									PCText
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.V.0" bid="31" h="24" w="192" pad="2" sid="-6">
+								<ct what="weblink">
+									thresholdCrossed
+								</ct>
+							</cell>
+						</td>
+					</tr>
+					<tr h="24" y="72">
+						<td htype="header">
+							<cell ref="1.L" bid="21" h="24" w="192" pad="2" sid="-5">
+								<ct what="weblink">
+									SpecificProblems
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.W.0" bid="32" h="24" w="192" pad="2" sid="-6">
+								<ct what="weblink">
+									1002000000
+								</ct>
+							</cell>
+						</td>
+					</tr>
+					<tr h="24" y="96">
+						<td htype="header">
+							<cell ref="1.M" bid="22" h="24" w="192" pad="2" sid="-5">
+								<ct what="weblink">
+									SPText
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.X.0" bid="33" h="24" w="192" pad="2" sid="-6">
+								<ct what="weblink">
+									Static threshold
+								</ct>
+							</cell>
+						</td>
+					</tr>
+					<tr h="24" y="120">
+						<td htype="header">
+							<cell ref="1.N" bid="23" h="24" w="192" pad="2" sid="-5">
+								<ct what="weblink">
+									PerceivedSeverity
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.Y.0" bid="34" h="24" w="192" pad="2" sid="-6">
+								<ct what="weblink">
+									4
+								</ct>
+							</cell>
+						</td>
+					</tr>
+					<tr h="24" y="144">
+						<td htype="header">
+							<cell ref="1.O" bid="24" h="24" w="192" pad="2" sid="-5">
+								<ct what="weblink">
+									PerceivedSeverityText
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.Z.0" bid="35" h="24" w="192" pad="2" sid="-6">
+								<ct what="weblink">
+									minor
+								</ct>
+							</cell>
+						</td>
+					</tr>
+					<tr h="24" y="168">
+						<td htype="header">
+							<cell ref="1.P" bid="25" h="24" w="192" pad="2" sid="-5">
+								<ct what="weblink">
+									ThresholdInformation
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.a.0" bid="36" h="24" w="192" pad="2" sid="-6">
+								<ct what="weblink">
+									&amp;nbsp;&amp;gt; 1
+								</ct>
+							</cell>
+						</td>
+					</tr>
+					<tr h="24" y="192">
+						<td htype="header">
+							<cell ref="1.Q" bid="26" h="24" w="192" pad="2" sid="-5">
+								<ct what="weblink">
+									AdditionalText
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.b.0" bid="37" h="24" w="192" pad="2" sid="-6">
+							</cell>
+						</td>
+					</tr>
+					<tr h="24" y="216">
+						<td htype="header">
+							<cell ref="1.R" bid="27" h="24" w="192" pad="2" sid="-5">
+								<ct what="weblink">
+									AdditionalInformation
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.c.0" bid="38" h="24" w="192" pad="2" sid="-6">
+							</cell>
+						</td>
+					</tr>
+					<tr h="24" y="240">
+						<td htype="header">
+							<cell ref="1.S" bid="28" h="24" w="192" pad="2" sid="-5">
+								<ct what="weblink">
+									CurrentTime
+								</ct>
+							</cell>
+						</td>
+						<td>
+							<cell ref="1.d.0" bid="39" h="24" w="192" pad="2" sid="-6">
+								<ct what="weblink">
+									2009-09-07 09:44:21
+								</ct>
+							</cell>
+						</td>
+					</tr>
+				</table>
+				<cell ref="1.e" bid="40" x="6" h="24" w="642" pad="1" sid="13">
+					<ct what="weblink">
+						Alarm Static Threshold Template
+					</ct>
+				</cell>
+			</page_element>
+			<page_element type="footer" ref="1.k" bid="46" y="949" h="75" w="1280" sid="2" rinfo="0:0;1:0;" cinfo="0:0;1:0;">
+			</page_element>
+		</page>
+	</report>
+</document>

@@ -1,0 +1,1 @@
+insert into Transformer (TRANSFORMERID, VERSIONID, TYPE) values ('DC_Z_ALARM:b59:DC_Z_ALARM_INFO:ALARM', 'DC_Z_ALARM:b59', 'SPECIFIC');

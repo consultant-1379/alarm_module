@@ -1,0 +1,66 @@
+<project name="install" basedir="." default="all">
+	
+	<property name="dcinstall.require.repository" value="> 5-0-0b83"/>
+	<property name="dcinstall.require.parser" value="> 5-0-0b212"/>
+
+	<target name="install" depends="copyTmpToDeploy">
+	
+		<if>
+			<available file="${dc.conf.dir}/alarm_templates"/>
+		<then/>
+		<else>
+			<mkdir dir="${dc.conf.dir}/alarm_templates"/>
+		</else>
+		</if>
+		
+        <copy todir="${dc.conf.dir}/alarm_templates">
+	    	<fileset dir="${dc.installer.dir}/tmp/templates"/>
+        </copy>
+
+	  	<if>
+	  	  <available file="${dc.bin.dir}/change_alarm_password.bsh"/>
+	  	  <then>
+	  	    <delete file="${dc.bin.dir}/change_alarm_password.bsh"/>
+	  	  </then>
+	  	</if>
+
+	  	<if>
+	  	  <available file="${dc.bin.dir}/change_alarm_property.bsh"/>
+	  	  <then>
+	  	    <delete file="${dc.bin.dir}/change_alarm_property.bsh"/>
+	  	  </then>
+	  	</if>
+
+	  	<copy file="${dc.installer.dir}/tmp/bin/change_alarm_password.bsh" toFile="${dc.bin.dir}/change_alarm_password.bsh"/>
+	  	<chmod perm="740" file="${dc.bin.dir}/change_alarm_password.bsh"/>
+		
+	  	<copy file="${dc.installer.dir}/tmp/bin/change_alarm_property.bsh" toFile="${dc.bin.dir}/change_alarm_property.bsh"/>
+	  	<chmod perm="740" file="${dc.bin.dir}/change_alarm_property.bsh"/>
+
+	  	<if>
+	  	  <available file="${dc.bin.dir}/alarm_utils.xml"/>
+	  	  <then>
+	  	    <delete file="${dc.bin.dir}/alarm_utils.xml"/>
+	  	  </then>
+	  	</if>
+
+	  	<copy file="${dc.installer.dir}/tmp/bin/alarm_utils.xml" toFile="${dc.bin.dir}/alarm_utils.xml"/>
+	  	<chmod perm="740" file="${dc.bin.dir}/alarm_utils.xml"/>
+
+		<if>
+  		  <available file="${dc.runtime.dir}/tomcat/webapps/techpackide/lib/alarm.jar"/>
+  		  <then>
+  			<delete file="${dc.runtime.dir}/tomcat/webapps/techpackide/lib/alarm.jar"/>
+			<copy todir="${dc.runtime.dir}/tomcat/webapps/techpackide/lib" flatten="true">
+				<fileset dir="${dc.platform.dir}">
+  					<include name="**/dclib/alarm.jar"/>
+  				</fileset>
+  			</copy>
+  		  </then>
+  		  <else/>
+  	    </if>
+	</target>
+
+	<target name="update" depends="moveToObsolete,install"/>
+
+</project>

@@ -1,0 +1,12 @@
+alarmmodule/buildlib	-	ant		-	ant.jar			- 	vobs/eniq_3pp/apache/ant/v162/prod
+alarmmodule/buildlib	-	common		-	common_5-0-0b112.jar	-	vobs/eniq_design/plat/common_utilities/build/common_utilities
+alarmmodule/buildlib	-	engine		-	engine_5-0-0b375.jar	-	vobs/eniq_design/plat/etl_controller/build/engine
+alarmmodule/buildlib	-	jconn3		-	jconn3.jar		-	vobs/eniq_3pp/sybase/sybase/v127/prod/client
+alarmmodule/buildlib	-	parser		-	parser_5-0-0b213.jar	-	vobs/eniq_design/plat/adapters/build/parser
+alarmmodule/buildlib	-	repository	-	repository_5-0-0b130.jar	-	vobs/eniq_design/plat/installer/build/repository
+alarmmodule/buildlib	-	velocity	-	velocity-dep-1.4.jar	-	vobs/eniq_3pp/apache/jakarta_velocity/v14/prod
+
+alarmmodule/dclib	-	commons-codec	-	commons-codec-1.3.jar	-	vobs/eniq_3pp/apache/comm_codec/v13/prod
+alarmmodule/dclib	-	commons-http	-	commons-httpclient-3.0.jar	-	vobs/eniq_3pp/apache/comm_httpclient/v30/prod
+alarmmodule/dclib	-	commons-logging	-	commons-logging-1.0.2.jar	-	vobs/eniq_3pp/apache/comm_logging/v1x/prod
+alarmmodule/dclib	-	WebPortalAPI	-	WebPortalAPI.jar	-	vobs/eniq_design/plat/web_portal/build/webportal_alarm

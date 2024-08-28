@@ -1,0 +1,216 @@
+<document xmlns='http://www.businessobjects.com/2003/ro' xmlns:ro='http://www.businessobjects.com/2003/ro' unit="pixel">
+<media>
+<property name="mode.selected">normal</property>
+<property name="mode.web.page.extra-padding-bottom">1000</property>
+<property name="mode.web.page.extra-padding-right">1000</property>
+<property name="mode.web.page.min-height">38400</property>
+<property name="mode.web.page.min-width">48000</property>
+<property name="output.dpi">96</property>
+<property name="output.format.xls.optimised">yes</property>
+<property name="output.format.xml.option.style">1</property>
+<property name="output.format.xml.styledict.fontplatform">html</property>
+<property name="output.format.xml.td.bandinfo">yes</property>
+<property name="output.limit.size">5120</property>
+<property name="output.selected">xml.ro</property>
+<property name="output.unit">pixel</property>
+<property name="page.records.horizontal.limit">1000</property>
+<property name="page.records.vertical.limit">1000</property>
+</media>
+<report rid="4554d82a-b743-447d-a4dd-ce226be4df3a">
+<styledict>
+<style sid="-4">
+<background rgb="#f0f0f4"/>
+</style>
+<style sid="-1">
+<background rgb="#f0f0f4"/>
+</style>
+<style sid="1">
+<font face="Arial, Helvetica, &apos;Courier New&apos;, &apos;Times New Roman&apos;" rgb="#000000" bold="false" italic="false" strike="false" underline="false"/>
+<background rgb="#ffffff"/>
+<valign value="middle"/>
+<halign value="center"/>
+</style>
+<style sid="3">
+</style>
+<style sid="5">
+<font face="Arial, Helvetica, &apos;Courier New&apos;, &apos;Times New Roman&apos;" size="13" rgb="#000000" bold="false" italic="false" strike="false" underline="false"/>
+<border side="all" rgb="#000000" thick="1" style="plain"/>
+<background rgb="#ffffbf"/>
+<valign value="middle"/>
+<halign value="left"/>
+</style>
+<style sid="6">
+<border side="all" rgb="#000000" thick="1" style="plain"/>
+<background rgb="#ffffff"/>
+</style>
+<style sid="12">
+<background rgb="#ffffff"/>
+</style>
+<style sid="13">
+<font face="Arial, Helvetica, &apos;Courier New&apos;, &apos;Times New Roman&apos;" size="16" rgb="#000000" bold="true" italic="false" strike="false" underline="false"/>
+<background rgb="#ffffff"/>
+<valign value="middle"/>
+<halign value="left"/>
+</style>
+<style sid="-6">
+<font face="Arial, Helvetica, &apos;Courier New&apos;, &apos;Times New Roman&apos;" size="13" rgb="#000000" bold="false" italic="false" strike="false" underline="false"/>
+<background rgb="#ffffff"/>
+<valign value="middle"/>
+<halign value="left"/>
+</style>
+<style sid="-5">
+<font face="Arial, Helvetica, &apos;Courier New&apos;, &apos;Times New Roman&apos;" size="13" rgb="#000000" bold="true" italic="false" strike="false" underline="false"/>
+<background rgb="#ffffff"/>
+<valign value="middle"/>
+<halign value="left"/>
+</style>
+<style sid="-3">
+<font face="Arial, Helvetica, &apos;Courier New&apos;, &apos;Times New Roman&apos;" size="13" rgb="#000000" bold="false" italic="false" strike="false" underline="false"/>
+<border side="all" rgb="#000000" thick="1" style="plain"/>
+<background rgb="#ffffbf"/>
+<valign value="middle"/>
+<halign value="left"/>
+</style>
+<style sid="-2">
+<font face="Arial, Helvetica, &apos;Courier New&apos;, &apos;Times New Roman&apos;" size="13" rgb="#ffffff" bold="true" italic="false" strike="false" underline="false"/>
+<border side="all" rgb="#000000" thick="1" style="plain"/>
+<background rgb="#000080"/>
+<valign value="middle"/>
+<halign value="left"/>
+</style>
+<style sid="8">
+<font face="Arial, Helvetica, &apos;Courier New&apos;, &apos;Times New Roman&apos;" size="16" rgb="#000000" bold="true" italic="false" strike="false" underline="false"/>
+<border side="left" rgb="#000000" thick="0"/>
+<border side="right" rgb="#000000" thick="0"/>
+<border side="top" rgb="#000000" thick="0"/>
+<border side="bottom" rgb="#000000" thick="1" style="plain"/>
+<valign value="bottom"/>
+<halign value="left"/>
+</style>
+<style sid="9">
+<font face="Arial, Helvetica, &apos;Courier New&apos;, &apos;Times New Roman&apos;" size="11" rgb="#000000" bold="true" italic="false" strike="false" underline="false"/>
+<border side="all" rgb="#000000" thick="0"/>
+<background rgb="#ffffff"/>
+<valign value="middle"/>
+<halign value="left"/>
+</style>
+</styledict>
+<page sid="1" num="1" format="A4" h="584" w="764" lastpage="true">
+<page_element type="body"  ref="1.i" bid="44" h="584" w="764" sid="3" rinfo="0:0;1:546;" cinfo="0:0;1:726;"><table class="vtable"  ref="1.f" bid="41" y="330" h="216" w="726" bt="1" sid="6" nbrow="9" nbcol="7"><col x="0" w="90"/>
+<col x="90" w="90"/>
+<col x="180" w="90"/>
+<col x="270" w="90"/>
+<col x="360" w="186"/>
+<col x="546" w="90"/>
+<col x="636" w="90"/>
+<tr h="24" y="0" type="header">
+<td vtype="header" ><cell  ref="1.3" bid="3" h="24" w="90" pad="2" bt="1" sid="-2"><ct what="weblink" >ManagedObjectInstance</ct></cell>
+</td><td vtype="header" ><cell  ref="1.4" bid="4" h="24" w="90" pad="2" bt="1" sid="-2"><ct what="weblink" >ObjectOfReference</ct></cell>
+</td><td vtype="header" ><cell  ref="1.5" bid="5" h="24" w="90" pad="2" bt="1" sid="-2"><ct what="weblink" >EventTime</ct></cell>
+</td><td vtype="header" ><cell  ref="1.6" bid="6" h="24" w="90" pad="2" bt="1" sid="-2"><ct what="weblink" >MonitoredAttributes</ct></cell>
+</td><td vtype="header" ><cell  ref="1.7" bid="7" h="24" w="186" pad="2" bt="1" sid="-2"><ct what="weblink" >MonitoredAttributeValues</ct></cell>
+</td><td vtype="header" ><cell  ref="1.8" bid="8" h="24" w="90" pad="2" bt="1" sid="-2"><ct what="weblink" >AlarmCriteria</ct></cell>
+</td><td vtype="header" ><cell  ref="1.9" bid="9" h="24" w="90" pad="2" bt="1" sid="-2"><ct what="weblink" >OssName</ct></cell>
+</td></tr><tr h="24" y="24">
+<td ><cell  ref="1.A.0" bid="10" h="24" w="90" pad="2" bt="1" sid="-3"><ct what="weblink" >ManagedElement=1,MgwApplication=1</ct></cell>
+</td><td ><cell  ref="1.B.0" bid="11" h="24" w="90" pad="2" bt="1" sid="-3"><ct what="weblink" >SubNetwork=ONRM_RootMo,SubNetwork=MGW,MeContext=MGw01,ManagedElement=1</ct></cell>
+</td><td ><cell  ref="1.C.0" bid="12" h="24" w="90" pad="2" bt="1" sid="-3"><ct what="weblink" >2011-01-21 16:00</ct></cell>
+</td><td ><cell  ref="1.D.0" bid="13" h="24" w="90" pad="2" bt="1" sid="-3"><ct what="weblink" >pmNrOfEmergencyCalls</ct></cell>
+</td><td ><cell  ref="1.E.0" bid="14" h="24" w="186" pad="2" bt="1" sid="-3"><ct what="weblink" >1332.00</ct></cell>
+</td><td ><cell  ref="1.F.0" bid="15" h="24" w="90" pad="2" bt="1" sid="-3"><ct what="weblink" >1</ct></cell>
+</td><td ><cell  ref="1.G.0" bid="16" h="24" w="90" pad="2" bt="1" sid="-3"><ct what="weblink" >eniq_oss_1</ct></cell>
+</td></tr><tr h="24" y="48">
+<td ><cell  ref="1.A.1" bid="10" h="24" w="90" pad="2" bt="1" sid="5"><ct what="weblink" >ManagedElement=1,MgwApplication=1</ct></cell>
+</td><td ><cell  ref="1.B.1" bid="11" h="24" w="90" pad="2" bt="1" sid="5"><ct what="weblink" >SubNetwork=ONRM_RootMo,SubNetwork=MGW,MeContext=MGw01,ManagedElement=1</ct></cell>
+</td><td ><cell  ref="1.C.1" bid="12" h="24" w="90" pad="2" bt="1" sid="5"><ct what="weblink" >2011-01-21 16:15</ct></cell>
+</td><td ><cell  ref="1.D.1" bid="13" h="24" w="90" pad="2" bt="1" sid="5"><ct what="weblink" >pmNrOfEmergencyCalls</ct></cell>
+</td><td ><cell  ref="1.E.1" bid="14" h="24" w="186" pad="2" bt="1" sid="5"><ct what="weblink" >26735.00</ct></cell>
+</td><td ><cell  ref="1.F.1" bid="15" h="24" w="90" pad="2" bt="1" sid="5"><ct what="weblink" >1</ct></cell>
+</td><td ><cell  ref="1.G.1" bid="16" h="24" w="90" pad="2" bt="1" sid="5"><ct what="weblink" >eniq_oss_1</ct></cell>
+</td></tr><tr h="24" y="72">
+<td ><cell  ref="1.A.2" bid="10" h="24" w="90" pad="2" bt="1" sid="-3"><ct what="weblink" >ManagedElement=1,MgwApplication=1</ct></cell>
+</td><td ><cell  ref="1.B.2" bid="11" h="24" w="90" pad="2" bt="1" sid="-3"><ct what="weblink" >SubNetwork=ONRM_RootMo,SubNetwork=MGW,MeContext=MGw01,ManagedElement=1</ct></cell>
+</td><td ><cell  ref="1.C.2" bid="12" h="24" w="90" pad="2" bt="1" sid="-3"><ct what="weblink" >2011-01-21 16:30</ct></cell>
+</td><td ><cell  ref="1.D.2" bid="13" h="24" w="90" pad="2" bt="1" sid="-3"><ct what="weblink" >pmNrOfEmergencyCalls</ct></cell>
+</td><td ><cell  ref="1.E.2" bid="14" h="24" w="186" pad="2" bt="1" sid="-3"><ct what="weblink" >52138.00</ct></cell>
+</td><td ><cell  ref="1.F.2" bid="15" h="24" w="90" pad="2" bt="1" sid="-3"><ct what="weblink" >1</ct></cell>
+</td><td ><cell  ref="1.G.2" bid="16" h="24" w="90" pad="2" bt="1" sid="-3"><ct what="weblink" >eniq_oss_1</ct></cell>
+</td></tr><tr h="24" y="96">
+<td ><cell  ref="1.A.3" bid="10" h="24" w="90" pad="2" bt="1" sid="5"><ct what="weblink" >ManagedElement=1,MgwApplication=1</ct></cell>
+</td><td ><cell  ref="1.B.3" bid="11" h="24" w="90" pad="2" bt="1" sid="5"><ct what="weblink" >SubNetwork=ONRM_RootMo,SubNetwork=MGW,MeContext=MGw01,ManagedElement=1</ct></cell>
+</td><td ><cell  ref="1.C.3" bid="12" h="24" w="90" pad="2" bt="1" sid="5"><ct what="weblink" >2011-01-21 16:45</ct></cell>
+</td><td ><cell  ref="1.D.3" bid="13" h="24" w="90" pad="2" bt="1" sid="5"><ct what="weblink" >pmNrOfEmergencyCalls</ct></cell>
+</td><td ><cell  ref="1.E.3" bid="14" h="24" w="186" pad="2" bt="1" sid="5"><ct what="weblink" >77541.00</ct></cell>
+</td><td ><cell  ref="1.F.3" bid="15" h="24" w="90" pad="2" bt="1" sid="5"><ct what="weblink" >1</ct></cell>
+</td><td ><cell  ref="1.G.3" bid="16" h="24" w="90" pad="2" bt="1" sid="5"><ct what="weblink" >eniq_oss_1</ct></cell>
+</td></tr><tr h="24" y="120">
+<td ><cell  ref="1.A.4" bid="10" h="24" w="90" pad="2" bt="1" sid="-3"><ct what="weblink" >ManagedElement=1,MgwApplication=1</ct></cell>
+</td><td ><cell  ref="1.B.4" bid="11" h="24" w="90" pad="2" bt="1" sid="-3"><ct what="weblink" >SubNetwork=ONRM_RootMo,SubNetwork=MGW,MeContext=MGw02,ManagedElement=1</ct></cell>
+</td><td ><cell  ref="1.C.4" bid="12" h="24" w="90" pad="2" bt="1" sid="-3"><ct what="weblink" >2011-01-21 16:00</ct></cell>
+</td><td ><cell  ref="1.D.4" bid="13" h="24" w="90" pad="2" bt="1" sid="-3"><ct what="weblink" >pmNrOfEmergencyCalls</ct></cell>
+</td><td ><cell  ref="1.E.4" bid="14" h="24" w="186" pad="2" bt="1" sid="-3"><ct what="weblink" >11334.00</ct></cell>
+</td><td ><cell  ref="1.F.4" bid="15" h="24" w="90" pad="2" bt="1" sid="-3"><ct what="weblink" >1</ct></cell>
+</td><td ><cell  ref="1.G.4" bid="16" h="24" w="90" pad="2" bt="1" sid="-3"><ct what="weblink" >eniq_oss_1</ct></cell>
+</td></tr><tr h="24" y="144">
+<td ><cell  ref="1.A.5" bid="10" h="24" w="90" pad="2" bt="1" sid="5"><ct what="weblink" >ManagedElement=1,MgwApplication=1</ct></cell>
+</td><td ><cell  ref="1.B.5" bid="11" h="24" w="90" pad="2" bt="1" sid="5"><ct what="weblink" >SubNetwork=ONRM_RootMo,SubNetwork=MGW,MeContext=MGw02,ManagedElement=1</ct></cell>
+</td><td ><cell  ref="1.C.5" bid="12" h="24" w="90" pad="2" bt="1" sid="5"><ct what="weblink" >2011-01-21 16:15</ct></cell>
+</td><td ><cell  ref="1.D.5" bid="13" h="24" w="90" pad="2" bt="1" sid="5"><ct what="weblink" >pmNrOfEmergencyCalls</ct></cell>
+</td><td ><cell  ref="1.E.5" bid="14" h="24" w="186" pad="2" bt="1" sid="5"><ct what="weblink" >36737.00</ct></cell>
+</td><td ><cell  ref="1.F.5" bid="15" h="24" w="90" pad="2" bt="1" sid="5"><ct what="weblink" >1</ct></cell>
+</td><td ><cell  ref="1.G.5" bid="16" h="24" w="90" pad="2" bt="1" sid="5"><ct what="weblink" >eniq_oss_1</ct></cell>
+</td></tr><tr h="24" y="168">
+<td ><cell  ref="1.A.6" bid="10" h="24" w="90" pad="2" bt="1" sid="-3"><ct what="weblink" >ManagedElement=1,MgwApplication=1</ct></cell>
+</td><td ><cell  ref="1.B.6" bid="11" h="24" w="90" pad="2" bt="1" sid="-3"><ct what="weblink" >SubNetwork=ONRM_RootMo,SubNetwork=MGW,MeContext=MGw02,ManagedElement=1</ct></cell>
+</td><td ><cell  ref="1.C.6" bid="12" h="24" w="90" pad="2" bt="1" sid="-3"><ct what="weblink" >2011-01-21 16:30</ct></cell>
+</td><td ><cell  ref="1.D.6" bid="13" h="24" w="90" pad="2" bt="1" sid="-3"><ct what="weblink" >pmNrOfEmergencyCalls</ct></cell>
+</td><td ><cell  ref="1.E.6" bid="14" h="24" w="186" pad="2" bt="1" sid="-3"><ct what="weblink" >62140.00</ct></cell>
+</td><td ><cell  ref="1.F.6" bid="15" h="24" w="90" pad="2" bt="1" sid="-3"><ct what="weblink" >1</ct></cell>
+</td><td ><cell  ref="1.G.6" bid="16" h="24" w="90" pad="2" bt="1" sid="-3"><ct what="weblink" >eniq_oss_1</ct></cell>
+</td></tr><tr h="24" y="192">
+<td ><cell  ref="1.A.7" bid="10" h="24" w="90" pad="2" bt="1" sid="5"><ct what="weblink" >ManagedElement=1,MgwApplication=1</ct></cell>
+</td><td ><cell  ref="1.B.7" bid="11" h="24" w="90" pad="2" bt="1" sid="5"><ct what="weblink" >SubNetwork=ONRM_RootMo,SubNetwork=MGW,MeContext=MGw02,ManagedElement=1</ct></cell>
+</td><td ><cell  ref="1.C.7" bid="12" h="24" w="90" pad="2" bt="1" sid="5"><ct what="weblink" >2011-01-21 16:45</ct></cell>
+</td><td ><cell  ref="1.D.7" bid="13" h="24" w="90" pad="2" bt="1" sid="5"><ct what="weblink" >pmNrOfEmergencyCalls</ct></cell>
+</td><td ><cell  ref="1.E.7" bid="14" h="24" w="186" pad="2" bt="1" sid="5"><ct what="weblink" >87543.00</ct></cell>
+</td><td ><cell  ref="1.F.7" bid="15" h="24" w="90" pad="2" bt="1" sid="5"><ct what="weblink" >1</ct></cell>
+</td><td ><cell  ref="1.G.7" bid="16" h="24" w="90" pad="2" bt="1" sid="5"><ct what="weblink" >eniq_oss_1</ct></cell>
+</td></tr></table><cell  ref="1.H" bid="17" x="6" y="300" h="24" w="642" pad="1" sid="9"><ct what="html" >&lt;!-- #DCDATA_START --&gt;</ct></cell>
+<table class="htable"  ref="1.g" bid="42" x="8" y="30" h="264" w="384" sid="12" nbrow="11" nbcol="2"><col x="0" w="192" type="header"/>
+<col x="192" w="192"/>
+<tr h="24" y="0">
+<td htype="header" ><cell  ref="1.I" bid="18" h="24" w="192" pad="2" sid="-5"><ct what="weblink" >ManagedObjectClass</ct></cell>
+</td><td ><cell  ref="1.T.0" bid="29" h="24" w="192" pad="2" sid="-6"><ct what="weblink" >MGWApplication</ct></cell>
+</td></tr><tr h="24" y="24">
+<td htype="header" ><cell  ref="1.J" bid="19" h="24" w="192" pad="2" sid="-5"><ct what="weblink" >ETText</ct></cell>
+</td><td ><cell  ref="1.U.0" bid="30" h="24" w="192" pad="2" sid="-6"><ct what="weblink" >Quality of service</ct></cell>
+</td></tr><tr h="24" y="48">
+<td htype="header" ><cell  ref="1.K" bid="20" h="24" w="192" pad="2" sid="-5"><ct what="weblink" >PCText</ct></cell>
+</td><td ><cell  ref="1.V.0" bid="31" h="24" w="192" pad="2" sid="-6"><ct what="weblink" >Threshold crossed</ct></cell>
+</td></tr><tr h="24" y="72">
+<td htype="header" ><cell  ref="1.L" bid="21" h="24" w="192" pad="2" sid="-5"><ct what="weblink" >SpecificProblems</ct></cell>
+</td><td ><cell  ref="1.W.0" bid="32" h="24" w="192" pad="2" sid="-6"><ct what="weblink" >1002000000</ct></cell>
+</td></tr><tr h="24" y="96">
+<td htype="header" ><cell  ref="1.M" bid="22" h="24" w="192" pad="2" sid="-5"><ct what="weblink" >SPText</ct></cell>
+</td><td ><cell  ref="1.X.0" bid="33" h="24" w="192" pad="2" sid="-6"><ct what="weblink" >Static Threshold</ct></cell>
+</td></tr><tr h="24" y="120">
+<td htype="header" ><cell  ref="1.N" bid="23" h="24" w="192" pad="2" sid="-5"><ct what="weblink" >PerceivedSeverity</ct></cell>
+</td><td ><cell  ref="1.Y.0" bid="34" h="24" w="192" pad="2" sid="-6"><ct what="weblink" >4</ct></cell>
+</td></tr><tr h="24" y="144">
+<td htype="header" ><cell  ref="1.O" bid="24" h="24" w="192" pad="2" sid="-5"><ct what="weblink" >PerceivedSeverityText</ct></cell>
+</td><td ><cell  ref="1.Z.0" bid="35" h="24" w="192" pad="2" sid="-6"><ct what="weblink" >minor</ct></cell>
+</td></tr><tr h="24" y="168">
+<td htype="header" ><cell  ref="1.P" bid="25" h="24" w="192" pad="2" sid="-5"><ct what="weblink" >ThresholdInformation</ct></cell>
+</td><td ><cell  ref="1.a.0" bid="36" h="24" w="192" pad="2" sid="-6"><ct what="weblink" >&amp;nbsp;&amp;gt; 50</ct></cell>
+</td></tr><tr h="24" y="192">
+<td htype="header" ><cell  ref="1.Q" bid="26" h="24" w="192" pad="2" sid="-5"><ct what="weblink" >AdditionalText</ct></cell>
+</td><td ><cell  ref="1.b.0" bid="37" h="24" w="192" pad="2" sid="-6"></cell>
+</td></tr><tr h="24" y="216">
+<td htype="header" ><cell  ref="1.R" bid="27" h="24" w="192" pad="2" sid="-5"><ct what="weblink" >AdditionalInformation</ct></cell>
+</td><td ><cell  ref="1.c.0" bid="38" h="24" w="192" pad="2" sid="-6"></cell>
+</td></tr><tr h="24" y="240">
+<td htype="header" ><cell  ref="1.S" bid="28" h="24" w="192" pad="2" sid="-5"><ct what="weblink" >CurrentTime</ct></cell>
+</td><td ><cell  ref="1.d.0" bid="39" h="24" w="192" pad="2" sid="-6"><ct what="weblink" >2011-01-21 03:57:00</ct></cell>
+</td></tr></table><cell  ref="1.e" bid="40" x="6" h="24" w="642" pad="1" sid="13"><ct what="weblink" >AM: Emergency Calls</ct></cell>
+</page_element></page></report>
+</document>
